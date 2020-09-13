@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.graphqlEnable": ["graphql"],
+  "prettier.cssEnable": ["css", "less", "scss"],
+  "prettier.jsonEnable": ["json"],
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 100,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}
