@@ -12,29 +12,36 @@ function App() {
         <table class="table-auto">
           <thead>
             <tr>
-              <th class="px-4 py-2">Title</th>
-              <th class="px-4 py-2">Author</th>
-              <th class="px-4 py-2">Views</th>
+              <th class="px-4 py-2">ID</th>
+              <th class="px-4 py-2">Picture</th>
+              <th class="px-4 py-2">Name</th>
+              <th class="px-4 py-2">Email</th>
+              <th class="px-4 py-2">Phone Number</th>
+              <th class="px-4 py-2">Gender</th>
+              <th class="px-4 py-2">Location</th>
+              <th class="px-4 py-2">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="border px-4 py-2">Intro to CSS</td>
-              <td class="border px-4 py-2">Adam</td>
-              <td class="border px-4 py-2">858</td>
-            </tr>
-            <tr class="bg-gray-100">
+              <td class="border px-4 py-2">1</td>
               <td class="border px-4 py-2">
-                A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on
-                Design
+                <img
+                  className="rounded-full"
+                  src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                  alt=""
+                />
               </td>
-              <td class="border px-4 py-2">Adam</td>
-              <td class="border px-4 py-2">112</td>
-            </tr>
-            <tr>
-              <td class="border px-4 py-2">Intro to JavaScript</td>
-              <td class="border px-4 py-2">Chris</td>
-              <td class="border px-4 py-2">1,280</td>
+              <td class="border px-4 py-2">Mr. Brad Gibson</td>
+              <td class="border px-4 py-2">brad.gibson@example.com</td>
+              <td class="border px-4 py-2">081-454-0666</td>
+              <td class="border px-4 py-2">Male</td>
+              <td class="border px-4 py-2">Waterford, Kilcoole</td>
+              <td class="border px-4 py-2">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  ADD
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
