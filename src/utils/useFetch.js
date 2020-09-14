@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default (url, options = null) => {
-  const [data, setData] = React.useState([]);
+  const [data, setData] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
   React.useEffect(() => {
@@ -18,6 +18,6 @@ export default (url, options = null) => {
       }
     };
     fetchData();
-  }, []);
+  }, [url, options]);
   return [data, isLoading, error];
 };

@@ -32,7 +32,7 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {users.results &&
+              {users &&
                 users.results.map((user, i) => (
                   <tr key={i.toString()}>
                     <td className="border px-4 py-2">{i + 1}</td>
