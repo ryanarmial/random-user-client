@@ -4,6 +4,7 @@ import './App.css';
 import './css/tailwind.css';
 
 import Home from './pages/Home';
+import Detail from './pages/Detail';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           <h1 className="text-white text-3xl">Random User List</h1>
         </header>
         <Switch>
+          <Route path="/users/:id">
+            <Detail />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

@@ -13,15 +13,15 @@ function Home() {
       phone_number: user.cell,
       gender: user.gender,
       location: `${user.location.city}, ${user.location.country}`,
-      picture: user.picture.thumbnail,
+      picture: user.picture.medium,
     };
 
     const response = await fetch('http://localhost:4000/users/', {
       method: 'POST',
-      body: newUser,
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
+      body: JSON.stringify(newUser),
     });
     const { data } = await response.json();
     history.push(`/users/${data[0]}`);
